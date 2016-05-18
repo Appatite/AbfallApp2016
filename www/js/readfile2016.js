@@ -2048,11 +2048,11 @@ function getLocalStorage() {
 function getLocalStorageView() {
 
     //console.log("localstorage length: " + localStorage.length);
-
+var strassenname = "Keine Einstellungen ausgewählt"
     for (var i = 0; i < localStorage.length; i++) {
         var locStore1 = window.localStorage.getItem("strasse");
         var myobj = JSON.parse(locStore1);
-        var strassenname = myobj.strasse;
+        strassenname = myobj.strasse;
 
     }
     //console.log(locStore1);
